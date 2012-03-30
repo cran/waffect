@@ -1,0 +1,2 @@
+useDynLib(waffect)
+exportPattern("^[[:alpha:]]+")

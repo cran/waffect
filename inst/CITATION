@@ -1,0 +1,16 @@
+citHeader("To cite package 'waffect' in publications use:")
+     
+## R >= 2.8.0 passes package metadata to citation().
+if(!exists("meta") || is.null(meta)) meta <- packageDescription("waffect")
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
+vers <- paste("R package version", meta$Version)
+     
+bibentry(
+  bibtype = "Article",
+  title = "Alternative Methods for H1 Simulations in Genome Wide Association Studies",
+  author = c(person(given = "V.", family="Perduca"), person(given = "C.", family = "Sinoquet"), person(given="R.",family = "Mourad"), person(given="G.",family="Nuel")),
+  year = "2012",
+  journal = "Human Heredity",
+  volume = "73",
+  pages = "95--104"
+)              
